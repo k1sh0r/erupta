@@ -31,6 +31,14 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+    <style type="text/css">
+    /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  #csi{
+    visibility: hidden;
+  }
+}
+ </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -52,7 +60,7 @@
 
         <!-- Image Logo -->
         <a class="navbar-brand logo-image" href="index.html"><img src="images/logo1.png" alt="alternative"></a> 
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/cslogo2.png" alt="alternative" style="width: 70px;height: 70px"></a> 
+        <a class="navbar-brand logo-image" href="index.html"><img id="csi" src="images/cslogo2.png" alt="alternative" style="width: 60px;height: 60px"></a> 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -442,18 +450,31 @@
                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:siterupta19@gmail.com">siterupta19@gmail.com</a></li>
                         
                     </ul>
+<div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
                     <h3 align= "left">Convenor</h3>
                     <p>Dr.C.Callins Christiana</p>
                     <p align="left">Head Of The Department </p>
                     <p align="left">Computer Science Engineering</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-col middle">
                     <h3 align= "left">Faculty Co-ordinator </h3>
                     <p>Mr.R.Rajaguru: 8883196469</p>
                     <p>Ms.M.Poonmani@Punitha: 9790982504 </p>
                     <p>Mr.B.Sivananthan: 9994112151</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="footer-col last">
                     <h3 align= "left">Student Co-ordinator </h3>
                     <p>B.Venkatesh Gowtham: <a href="https://api.whatsapp.com/send?phone=919750770047">9750770047</a></p>
                     <p>N.Viswanathan: <a href="https://api.whatsapp.com/send?phone=918610315149">8610315149</a></p>
-                    
+                </div>
+            </div>
+                </div>    
                     
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -461,10 +482,7 @@
         </div> <!-- end of container -->
     </div> <!-- end of form -->
     <!-- end of contact -->
-
-
-    
-    <!-- end of footer -->
+ 
 
 
     <!-- Copyright -->
